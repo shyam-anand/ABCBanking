@@ -96,7 +96,7 @@ public class TokensController {
     }
 
     @ApiOperation(value = "Add an Action to the token", notes = "An action can have comments and a status")
-    @RequestMapping(value = "/{id}/actions", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/{id}/action", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity addAction(@PathVariable("id") long id,
                                     @RequestBody Action action) {
 

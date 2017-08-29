@@ -2,10 +2,13 @@
 A Spring Project with ReST, JPA, MySQL, Redis and Spring Security
 
 ### Dependencies
-The project requires Java 8 and connections to MySQL and Redis.
+The project requires Java 8 and Maven to build, and connections to MySQL and Redis.
 
 ### Running the project
-`$ spring-boot:run`
+
+1. Configure MySQL and Redis connections using `src/resources/application.properties`. Use the template file to see the parameters required.
+2. Run `mvn spring-boot:run` in the root directory.
+3. You could also run `mvn install` to create a deployable `.war` file.
 
 ### Usage
 

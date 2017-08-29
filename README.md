@@ -24,10 +24,10 @@ the optional parameter `priority` with value `true`.
 Using POST requests to `/customer` endpoint. The customer details should be in the request body, as show below.
 
     {
-        "name": "[customer-name]",
+        "name": "[customer-fullname]",
         "phone": "[phone-number]",
         "address": "[address]",
-        "type": "[NORMAL/PRIORITY]",
+        "type": "[NORMAL / PRIORITY]",
         "user_name": "[unique-username]",
         "password": "[password]"
     }
@@ -64,11 +64,12 @@ Password: manager
 **A few useful endpoints**
 
 `/users` - POST to create users (managers and operators). The request body should be as below.
+
     {
-        "user_name":"operator",
-        "password":"operator",
-        "name":"Operator User",
-        "type":"OPERATOR"
+        "user_name":"[unique-username]",
+        "password":"[password]",
+        "name":"[full-name]",
+        "type":"[OPERATOR / MANAGER]"
     }
 
 `/counters/{counterId}/queue` - View the token queue for a counter

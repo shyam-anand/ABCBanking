@@ -63,8 +63,18 @@ Password: manager
 
 **A few useful endpoints**
 
+`/users` - POST to create users (managers and operators). The request body should be as below.
+    {
+        "user_name":"operator",
+        "password":"operator",
+        "name":"Operator User",
+        "type":"OPERATOR"
+    }
+
 `/counters/{counterId}/queue` - View the token queue for a counter
+
 `/tokens/{tokenId}` - GET to view details, PUT or POST with parameter `status` to update the status.
+
 `/tokens/{tokenId}/action` - POST to create an Action for the Token
 
 #### Other notes

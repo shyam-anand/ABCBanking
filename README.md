@@ -19,7 +19,9 @@ The project will create the tables, will insert sample data into the services ta
 Services are listed at `/services` endpoint. Add a counter using `POST` requests to `/counters?service={serviceId}`. Counter can be set as PRIORITY using 
 the optional parameter `priority` with value `true`.
 
-##### 2. Create customers using POST requests to `/customer` endpoint. The customer details should be in the request body, as show below.
+##### 2. Create customers 
+
+Using POST requests to `/customer` endpoint. The customer details should be in the request body, as show below.
 
     {
         "name": "[customer-name]",

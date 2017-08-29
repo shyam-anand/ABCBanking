@@ -10,6 +10,8 @@ The project requires Java 8 and Maven to build, and connections to MySQL and Red
 2. Run `mvn spring-boot:run` in the root directory.
 3. You could also run `mvn install` to create a deployable `.war` file.
 
+The project will create the tables, will insert sample data into the services table and create the default manager user.
+
 ### Usage
 
 1. Create counters for the services

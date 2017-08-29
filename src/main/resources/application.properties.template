@@ -1,0 +1,19 @@
+# Datasource config
+spring.jpa.hibernate.ddl-auto=none
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+# Redis config
+spring.redis.host=
+spring.redis.port=
+spring.redis.password=
+
+# DB migration config.
+flyway.locations=classpath:db/migration
+flyway.baseline-on-migrate=true
+flyway.baseline-version=1
+
+# Set logging level to debug
+# logging.level.com.abcbank.banking=DEBUG
